@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScienceNews - Главное из мира науки сегодня</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="logo">
+                <h1>ScienceNews</h1>
+                <span class="logo-subtitle">Мир науки</span>
+            </div>
+            
+            <div class="header-top-right">
+                <div class="view-switcher">
+                    <button type="button" data-view="desktop" class="view-btn active">Desktop</button>
+                    <button type="button" data-view="mobile" class="view-btn">Mobile</button>
+                </div>
+                <button class="subscribe-btn">Подписаться</button>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <nav class="nav">
+                <a href="#news-astronomy" class="nav-link active">Главная</a>
+                <a href="#news-astronomy" class="nav-link">Астрономия</a>
+                <a href="#news-physics" class="nav-link">Физика</a>
+                <a href="#news-biology" class="nav-link">Биология</a>
+                <a href="#news-chemistry" class="nav-link">Химия</a>
+                <a href="#news-medicine" class="nav-link">Медицина</a>
+                <a href="#news-ecology" class="nav-link">Экология</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-container">
+                    <button class="search-btn" id="searchToggle">🔍 Поиск</button>
+                    <form class="search-expand" id="searchForm" action="#">
+                        <input type="text" class="search-input" id="searchInput" placeholder="Введите запрос..." aria-label="Поле поиска новостей">
+                        <button type="submit" class="search-submit">Найти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="hero-news">
+            <div class="hero-image">
+                <img src="https://s0.rbk.ru/v6_top_pics/media/img/1/83/347298425407831.webp" alt="Туманность в космосе">
+                <span class="hero-badge">Главная новость</span>
+            </div>
+            <div class="hero-content" id="news-astronomy">
+                <h2>Телескоп Джеймса Уэбба обнаружил новую экзопланету с признаками жизни</h2>
+                <p class="hero-description">
+                    Астрономы выявили в атмосфере далёкой планеты водяной пар и метан — 
+                    возможные биосигнатуры. Открытие может изменить представление о распространённости жизни во Вселенной.
+                </p>
+                <div class="hero-meta">
+                    <time datetime="2026-11-17">17 ноября 2026</time>
+                    <span class="hero-category">Астрономия</span>
+                </div>
+                <a href="#" class="hero-link">Читать полностью →</a>
+            </div>
+        </section>
+
+        <div class="content-grid">
+
+            <section class="news-feed">
+                <h3 class="section-title">Лента новостей</h3>
+                
+                <article class="news-card" id="news-biology">
+                    <img src="https://hightech.fm/wp-content/uploads/2018/11/17346-768x381.jpg" alt="Лаборатория">
+                    <div class="news-content">
+                        <span class="news-category">Биология</span>
+                        <h4>Учёные создали искусственный фотосинтез</h4>
+                        <p>Новая технология позволяет преобразовывать солнечный свет в энергию с КПД 40%.</p>
+                        <div class="news-meta">
+                            <time>16 ноября 2026</time>
+                            <span>4 мин</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card" id="news-physics">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQovkZFVdnFUliMMtryOsOnhZN_dUZ3U9bhxj2dG5wgrlTsTi600zFPZs&s=10" alt="Квантовая физика">
+                    <div class="news-content">
+                        <span class="news-category">Физика</span>
+                        <h4>Достигнут рекорд квантовой запутанности</h4>
+                        <p>Физики удержали запутанное состояние 1000 кубитов в течение 10 минут.</p>
+                        <div class="news-meta">
+                            <time>15 ноября 2026</time>
+                            <span>5 мин</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card" id="news-medicine">
+                    <img src="https://static.tildacdn.com/tild3737-6334-4664-a436-343137666366/_.jpg" alt="ДНК">
+                    <div class="news-content">
+                        <span class="news-category">Медицина</span>
+                        <h4>Генная терапия победила редкое заболевание</h4>
+                        <p>Клинические испытания показали полное излечение у 95% пациентов.</p>
+                        <div class="news-meta">
+                            <time>14 ноября 2026</time>
+                            <span>6 мин</span>
+                        </div>
+                    </div>
+                </article>
+
+                 <article class="news-card" id="news-chemistry">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4SR4_HdvD6MKfIKiLONDgoW_04rRkPjIlRbe765OS1rxXes2-jvSWAMd1&s=10" alt="Химия">
+                    <div class="news-content">
+                        <span class="news-category">Химия</span>
+                        <h4>Открыт новый сверхпроводник при комнатной температуре</h4>
+                        <p>Материал проводит электричество без сопротивления при 20°C.</p>
+                        <div class="news-meta">
+                            <time>12 ноября 2026</time>
+                            <span>7 мин</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card" id="news-ecology">
+                    <img src="https://www.computerra.ru/wp-content/uploads/2020/04/1-20.jpg" alt="Экология">
+                    <div class="news-content">
+                        <span class="news-category">Экология</span>
+                        <h4>Обнаружен новый вид глубоководных организмов</h4>
+                        <p>Экспедиция в Марианскую впадину нашла 15 ранее неизвестных видов.</p>
+                        <div class="news-meta">
+                            <time>11 ноября 2026</time>
+                            <span>4 мин</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <aside class="sidebar">
+                <h3 class="section-title">Популярное</h3>
+                
+                <div class="popular-list">
+                    <article class="popular-item">
+                        <span class="popular-number">1</span>
+                        <div class="popular-content">
+                            <h5>Нейросеть научилась предсказывать землетрясения</h5>
+                            <time>17 ноября 2026</time>
+                        </div>
+                    </article>
+
+                    <article class="popular-item">
+                        <span class="popular-number">2</span>
+                        <div class="popular-content">
+                            <h5>Создан квантовый компьютер на 10000 кубитов</h5>
+                            <time>16 ноября 2026</time>
+                        </div>
+                    </article>
+
+                    <article class="popular-item">
+                        <span class="popular-number">3</span>
+                        <div class="popular-content">
+                            <h5>Учёные продлили жизнь мышей на 50%</h5>
+                            <time>15 ноября 2026</time>
+                        </div>
+                    </article>
+
+                    <article class="popular-item">
+                        <span class="popular-number">4</span>
+                        <div class="popular-content">
+                            <h5>Обнаружена вода на спутнике Юпитера Европе</h5>
+                            <time>14 ноября 2026</time>
+                        </div>
+                    </article>
+
+                    <article class="popular-item">
+                        <span class="popular-number">5</span>
+                        <div class="popular-content">
+                            <h5>Новый метод переработки пластика за 1 час</h5>
+                            <time>13 ноября 2026</time>
+                        </div>
+                    </article>
+                </div>
+            </aside>
+
+        </div>
+
+        <section class="subscribe-section">
+            <div class="subscribe-content">
+                <h3>Будьте в курсе научных открытий</h3>
+                <p>Подпишитесь на нашу рассылку и получайте важные новости науки каждое утро</p>
+                <form class="subscribe-form" ation="#">
+                    <input type="email" placeholder="Ваш email" required aria-label="Введите Ваш email для подписки">
+                    <button type="submit">Подписаться</button>
+                </form>
+                <p class="subscribe-note">Нажимая кнопку, вы соглашаетесь с условиями обработки данных</p>
+            </div>
+        </section>
+
+        <section class="special-projects">
+            <h3 class="section-title">Спецпроекты</h3>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="https://www.computerra.ru/wp-content/uploads/2019/03/The-Space-Roar.jpg" alt="Космос">
+                    <h4>Тайны Вселенной</h4>
+                    <p>Чёрные дыры, тёмная материя, мультивселенные</p>
+                </article>
+                <article class="project-card">
+                    <img src="https://hi-news.ru/wp-content/uploads/2019/09/genetic_code_image_three.jpg" alt="Биология">
+                    <h4>Код жизни</h4>
+                    <p>Генетика, эволюция, синтетическая биология</p>
+                </article>
+                <article class="project-card">
+                    <img src="https://cs19.pikabu.ru/s/2026/03/23/14/f2qewlst_lg.jpg" alt="Квантовая физика">
+                    <h4>Квантовый мир</h4>
+                    <p>Запутанность, суперпозиция, квантовые компьютеры</p>
+                </article>
+                <article class="project-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTARftSoR8njURHNgv7Ujhpv9F7fsGLPL7ZDonPMt7kwWtC7kcUDwE-l3sA&s=10" alt="Медицина">
+                    <h4>Медицина будущего</h4>
+                    <p>CRISPR, нанороботы, персонализированная терапия</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <h2>ScienceNews</h2>
+                <p>Мир науки</p>
+            </div>
+            <nav class="footer-nav">
+                <a href="#">О проекте</a>
+                <a href="#">Редакция</a>
+                <a href="#">Реклама</a>
+                <a href="#">Контакты</a>
+            </nav>
+        </div>
+        
+        <div class="footer-social">
+            <a href="#" class="social-btn">ВКонтакте</a>
+            <a href="#" class="social-btn">Telegram</a>
+            <a href="#" class="social-btn">Дзен</a>
+            <a href="#" class="social-btn">YouTube</a>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 ScienceNews. Все права защищены.</p>
+            <p>Политика конфиденциальности | Пользовательское соглашение</p>
+        </div>
+    </footer>
+
+    <script src="js/js_apps.js"></script>
+</body>
+</html>
